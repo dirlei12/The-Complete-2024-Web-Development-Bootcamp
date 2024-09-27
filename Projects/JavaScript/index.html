@@ -6,6 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        // var text = prompt("Compose your text");
+        // var textLength = text.length;
+        // var characteresRemain = 200 - textLength;
+        // alert("You have written " +textLength+ " characteres, you have "+characteresRemain+" characteres left." );
+
+        // var tweet = text.slice(0,280);
+        // alert(tweet);
+        // alert(tweet.length);
+        // var tweet= alert(prompt("Compose your tweet:").slice(0,140));
+
+        var name = prompt("What is your name:");
+        name = name.toLowerCase();
+        var firstLetter = name.slice(0,1);
+        firstLetter = firstLetter.toUpperCase();
+        alert(firstLetter);
+        var restName = name.slice(1,name.length);
+        var finalName = firstLetter+restName;
+        alert("Hello, "+ finalName+"!")
+        
+
+
+        
+
+    </script>
 </body>
 </html>
