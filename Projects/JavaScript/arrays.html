@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var guestList = ["Angela","Jack","Pam","James","Lara","Jason"];
+        
+        var name = prompt("Whats is your name?");
+        var nameLength = name.length;
+        name = name.toLowerCase();
+        var firstLetter = name.slice(0,1);
+        firstLetter = firstLetter.toUpperCase();
+        var restLetter = name.slice(1,nameLength);
+        name = firstLetter+restLetter;
+
+
+        if (guestList.includes(name)==true) {
+            alert("Welcome to the party "+name+".");
+        } else {
+            alert("Your name is not on the guest list.");
+            
+        }
+
+    </script>
+</body>
+</html>
