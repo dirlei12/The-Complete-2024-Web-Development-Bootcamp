@@ -4,5 +4,5 @@ This repository contains all the projects and exercises completed as part of "Th
 <ul>
         <h1>Projects</h1>
         <br>
-        <li><h2><a href="https://dirlei12.github.io/The-Complete-2024-Web-Development-Bootcamp/Dicee">First Web Page with Bootstrap Components</a> </h2></li>
+        <li><h2><a href="https://dirlei12.github.io/The-Complete-2024-Web-Development-Bootcamp/Dicee/index.html">First Web Page with Bootstrap Components</a> </h2></li>
     </ul>
