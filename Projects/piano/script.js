@@ -103,7 +103,7 @@ function tocarMario() {
     } else {
       clearInterval(intervalo);
     }
-  }, 300); // Define o tempo de intervalo entre cada nota
+  }, 500); // Define o tempo de intervalo entre cada nota
 }
 
 // Event listener para o botão HTML
@@ -129,7 +129,7 @@ function tocarParabens() {
     } else {
       clearInterval(intervalo); // Para o intervalo ao terminar a sequência
     }
-  }, 300); // Define o tempo de intervalo entre cada nota
+  }, 430); // Define o tempo de intervalo entre cada nota
 }
 
 // Event listener para o botão HTML
@@ -161,7 +161,7 @@ function tocarAsaBranca() {
     } else {
       clearInterval(intervalo); // Para o intervalo ao terminar a sequência
     }
-  }, 250); // Ajuste o intervalo conforme necessário
+  }, 400); // Ajuste o intervalo conforme necessário
 }
 // Event listener para o botão HTML
 document.getElementById("tocarAsaBranca").addEventListener("click", tocarAsaBranca);
@@ -216,7 +216,7 @@ function tocarHinoBrasileiro() {
     } else {
       clearInterval(intervalo); // Para o intervalo ao terminar a sequência
     }
-  }, 230); // Ajuste o intervalo conforme necessário
+  }, 400); // Ajuste o intervalo conforme necessário
 }
 // Event listener para o botão HTML
 document.getElementById("tocarHinoBrasileiro").addEventListener("click", tocarHinoBrasileiro);
