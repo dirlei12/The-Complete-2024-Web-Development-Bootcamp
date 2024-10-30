@@ -1,0 +1,23 @@
+ /* Estilo geral */
+ .piano-container {
+    display: flex;
+    width: 600px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 2px;
+  }
+
+  /* Teclas brancas */
+  .key {
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(221, 216, 216);
+    border: 1px solid black; */
+    box-sizing: border-box;
+  }
+
+  p{
+   
+    text-align: center;
+  }
