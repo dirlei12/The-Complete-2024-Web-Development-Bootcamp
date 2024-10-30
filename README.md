@@ -4,5 +4,5 @@ This repository contains all the projects and exercises completed as part of "Th
 <ul>
         <h1>Projects</h1>
         <br>
-        <li><h2><a href="Projects/Bootstrap/11.3+TinDog+Project/" target="_blank">First Web Page with Bootstrap Components</a> </h2></li>
+        <li><h2><a href="Projects/Bootstrap/11.3+TinDog+Project/index.html" target="_blank">First Web Page with Bootstrap Components</a> </h2></li>
     </ul>
