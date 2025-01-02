@@ -7,4 +7,4 @@ This repository contains all the projects and exercises completed as part of "Th
         <li><h2><a href="https://dirlei12.github.io/The-Complete-2024-Web-Development-Bootcamp/Projects/piano/index.html">Piano</a> </h2></li>
         <br>
         
-    </ul>
+   
