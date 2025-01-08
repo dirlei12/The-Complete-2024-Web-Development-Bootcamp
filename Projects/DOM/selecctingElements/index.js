@@ -19,9 +19,9 @@
 // alert(document.getElementsByTagName("li").length);
 
 
-document.querySelector(".list a").style.color = "red";
+// document.querySelector(".list a").style.color = "red";
 
-document.querySelectorAll("#list .list")[1].style.color = "purple";
+// document.querySelectorAll("#list .list")[1].style.color = "purple";
 
-document.querySelector("#list").lastElementChild.style.color = "blue";
+// document.querySelector("#list").lastElementChild.style.color = "blue";
 
