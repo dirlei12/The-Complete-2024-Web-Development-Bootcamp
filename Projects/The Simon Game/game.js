@@ -1,42 +1,89 @@
-//array to save the pattern
-let gamePattern = [];
+//audios of the game
 
 //array where the colour buttons are
 let buttonCoulors = ["red", "blue", "green", "yellow"];
 
+//array to save the pattern
+let gamePattern = [];
+let userPattern = [];
 
-
-//function to get a randon number from 0 to 3
+//1. Inside game.js create a new function called nextSequence()
 function nextSequence() {
-    var randonNumber = Math.floor(Math.random() * 4);
+   
+    var randomNumber = Math.floor(Math.random() * 4);
+    var randomChosenColour = buttonCoulors[randomNumber];
+    
+    gamePattern.push(randomChosenColour);
 
-    return randonNumber;
+    var selectedBtn = $("#"+randomChosenColour);
+    selectedBtn.fadeOut(100).fadeIn(100);
+
+    playSound(randomChosenColour);
+    // var selectedBtn = $("#"+randomChosenColour);
+    // selectedBtn.fadeOut(100).fadeIn(100);
+    // var audio = new Audio("sounds/"+randomChosenColour+".mp3");
+    // audio.play();
+
+    return gamePattern;
+
 }
 
+//button cliked by user
+$(".btn").on("click", function(){
+    var userChosenColour = $(this).attr("id");
+    userPattern.push(userChosenColour);
+    console.log(userPattern);
 
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
 
-
-
-
-$(".play").on("click", function(){
-
-    nextSequence();
-    //variable to save the randon chosen colour
-    var randomChosenColour = buttonCoulors[nextSequence()];
-
-   // add the randon chosen colour to the array gamePatern
-    gamePattern.push(randomChosenColour);  
+    // var selectedBtn = $("#"+userChosenColour);
+    // selectedBtn.fadeOut(100).fadeIn(100);
+    // var audio = new Audio("sounds/"+userChosenColour+".mp3");
+    // audio.play();
 });
 
-// event to check the game patern
-$(".ma").on("click", function(){
+function playSound(name) {
     
-    for (let index = 0; index < gamePattern.length; index++) {
-        alert(gamePattern)[index];   
+    var audio = new Audio("sounds/"+name+".mp3");
+    audio.play();
+}
+
+function animatePress(currentColour) {
+    var selectedBtn = $("#"+currentColour);
+    selectedBtn.addClass("pressed").delay(100).queue(function(next){
+        $(this).removeClass('pressed');
+        next();
+      });
+    
+}
+
+// here to start the game
+var started = false;
+var level;
+$(document).keydown(function() {
+    if (!started) {
+        nextSequence();
+        started = true;
         
+        
+
+
     }
-       
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
